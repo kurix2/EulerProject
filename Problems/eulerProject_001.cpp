@@ -9,7 +9,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 int problem1(int limit);
 
 int main() {
-  std::cout << problem1(999) << std::endl;
+  std::cout << problem1(1000) << std::endl;
   return 0;
 }
 
