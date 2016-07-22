@@ -1,4 +1,4 @@
-// Copyright 2016 Chris Lamb
+// Euler Project 1 Copyright 2016
 #include<iostream>
 
 /*
@@ -6,7 +6,14 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
-int Euler(int limit) {
+int problem1(int limit);
+
+int main() {
+  std::cout << problem1(999) << std::endl;
+  return 0;
+}
+
+int problem1(int limit) {
   int sum = 0;
 
   for (int i = 0; i < limit; i++) {
@@ -15,10 +22,4 @@ int Euler(int limit) {
     }
   }
   return sum;
-}
-
-int main() {
-  Euler(1000);
-
-  return 0;
 }
